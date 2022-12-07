@@ -3,6 +3,7 @@ import * as S from './Main.styled';
 import logo from '../../assets/images/logo.png';
 import findHospital from '../../assets/images/findHospital.avif';
 import findPill from '../../assets/images/findPill.avif';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   return (
@@ -19,27 +20,21 @@ const Main = () => {
         <figure class='findHospital'>
           <img src={findHospital} alt='findHosptial' />
           <figcaption>
-            <h3>Hosptial&pharmacy</h3>
-            <p>
-              The strength to change what I can, the inability to accept what I can't and the incapacity to tell the
-              difference.
-            </p>
-            <a href='#' class='read-more'>
+            <h3>Hosptial & pharmacy</h3>
+            <p>건강보험심사평의 정보를 통해 병원과 약국 위치정보를 알 수 있습니다.</p>
+            <Link to='/hospital' class='read-more'>
               Read More
-            </a>
+            </Link>
           </figcaption>
         </figure>
         <figure class='findPill'>
           <img src={findPill} alt='findPill' />
           <figcaption>
-            <h3>pill</h3>
-            <p>
-              The strength to change what I can, the inability to accept what I can't and the incapacity to tell the
-              difference.
-            </p>
-            <a href='#' class='read-more'>
+            <h3>PILL</h3>
+            <p>건강보험심사평의 자료로 약의 세부정보를 알 수 있습니다.</p>
+            <Link to='searchPill' class='read-more'>
               Read More
-            </a>
+            </Link>
           </figcaption>
         </figure>
       </div>
