@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import { pastelBlue, pink } from '../../styles/theme';
+import { pastelBlue, pink, font } from '../../styles/theme';
 
 export const MainContainer = styled.div`
-  background-color: #efeff1;
   height: 100vh;
   .logoCotainer {
     text-align: center;
     margin-bottom: 30px;
-    color: #676a6c;
+    color: ${font};
     .logo {
       width: 300px;
     }
