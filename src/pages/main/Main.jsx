@@ -22,7 +22,7 @@ const Main = () => {
           <figcaption>
             <h3>Hosptial & pharmacy</h3>
             <p>건강보험심사평의 정보를 통해 병원과 약국 위치정보를 알 수 있습니다.</p>
-            <Link to='/hospital' class='read-more'>
+            <Link to='/location' class='read-more'>
               Read More
             </Link>
           </figcaption>
