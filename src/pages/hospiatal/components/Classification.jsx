@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiSearchCircle } from 'react-icons/hi';
 import styled from 'styled-components';
-import { pastelBlue, pastelGreen, pink } from '../../../styles/theme';
+import { pastelBlue, pink } from '../../../styles/theme';
 import List from './List';
 
 const Classification = () => {
