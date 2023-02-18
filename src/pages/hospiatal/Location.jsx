@@ -1,25 +1,18 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import XMLParser from 'react-xml-parser';
 import styled from 'styled-components';
 import Classification from './components/Classification';
 import Map from './components/Map';
 
 const Location = () => {
-  function parseStr(dataSet) {
-    const dataArr = new XMLParser().parseFromString(dataSet).children;
-    console.log(dataArr);
-  }
-
   useEffect(() => {
     axios({
       method: 'get',
-      url: `http://apis.data.go.kr/B551182/hospInfoServicev2/getHospBasisList`,
+      url: 'https://apis.data.go.kr/B551182/hospInfoServicev2/getHospBasisList?ServiceKey=H%252F6w3lyHOPT0BA4p3Khpe6KfnjBBEqX8Z863KuQCjPNnVGKOMAS2pr8Mjza3G1SUTWczbsmoVpkxQdH9tlBXHw%253D%253D',
     })
       .then(function (response) {
         const dataSet = response.data;
-        console.log('성공');
-        parseStr(dataSet);
+        console.log('성공', dataSet);
       })
       .catch((err) => {
         console.log('실패', err);
